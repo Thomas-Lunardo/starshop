@@ -1,8 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Starshop: Beam up some parts!{% endblock %}
+
+{% block body %}
+
 <h1>
-    Starshop: your monopoly-busting option for Starship parts!
+    Starshop: your monopoly-busting option for Starship parts
 </h1>
 <div>
-    Browse through {{ numberOfStarships * 10 }} starships!
+    <p>Browse through {{ numberOfStarships * 10 }} starships!</p>
 
     {% if numberOfStarships > 400 %}
         <p>This is shipload of starship</p>
@@ -30,3 +36,5 @@
         </tr>
     </table>
 </div>
+
+{% endblock %}
